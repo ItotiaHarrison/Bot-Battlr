@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import Navigation from "./Navigation";
-import BotsContainer from "./BotsContainer";
+import Navigation from "./components/Navigation";
+import BotsPage from "./containers/BotsPage";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navigation />
-        <BotsContainer />
+        <BotsPage />
       </div>
     );
   }
