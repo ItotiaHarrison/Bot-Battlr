@@ -22,32 +22,32 @@ BotPage is the highest component below App, and serves as the main container for
 ### Instructions
 Follow along with these steps, making sure to read all of the instructions before beginning to code.
 
-1. Fetching Bots
+  1. Fetching Bots
 
-Work on fetching data from this API: https://bot-battler-api.herokuapp.com/api/v1/bots. The response should contain an array of bot objects that are structured as follows:
-```
-  {
-    "id": 301,
-    "name": "gs-98",
-    "health": 71,
-    "damage": 85,
-    "armor": 34,
-    "bot_class": "Assault",
-    "catchphrase": "111111111111110011001111100101110010010110001100",
-    "avatar_url": "https://robohash.org/voluptasetab.png?size=300x300&set=set1",
-    "created_at": "2017-12-08T14:13:45.272Z",
-    "updated_at": "2017-12-08T14:13:45.272Z"
-  }
-```
-Based on the current structure of the app, think about where this array of bots needs to be stored.
+  Work on fetching data from this API: https://bot-battler-api.herokuapp.com/api/v1/bots. The response should contain an array of bot objects that are structured as follows:
+  ```
+    {
+      "id": 301,
+      "name": "gs-98",
+      "health": 71,
+      "damage": 85,
+      "armor": 34,
+      "bot_class": "Assault",
+      "catchphrase": "111111111111110011001111100101110010010110001100",
+      "avatar_url": "https://robohash.org/voluptasetab.png?size=300x300&set=set1",
+      "created_at": "2017-12-08T14:13:45.272Z",
+      "updated_at": "2017-12-08T14:13:45.272Z"
+    }
+  ```
+  Based on the current structure of the app, think about where this array of bots needs to be stored.
 
-2. Indexing bots
+  2. Indexing bots
 
-After you have fetched the bots, work on rendering them into `BotCollection` A component called `BotCard` has been provided to you to display the information about an individual bot in a list format.
+  After you have fetched the bots, work on rendering them into `BotCollection` A component called `BotCard` has been provided to you to display the information about an individual bot in a list format.
 
-3. Enlisting bots
+  3. Enlisting bots
 
-Once the list is complete, work on the functionality of the list. Clicking a card should add a bot to the user's list of bots. Bots that have been chosen should be displayed within `YourBotArmy` (feel free to reuse `BotCard`)
+  Once the list is complete, work on the functionality of the list. Clicking a card should add a bot to the user's list of bots. Bots that have been chosen should be displayed within `YourBotArmy` (feel free to reuse `BotCard`)
 
 ##Checkpoint!
 
