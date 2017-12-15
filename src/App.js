@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navigation from "./components/Navigation";
 import BotsPage from "./containers/BotsPage";
 import "./App.css";
 
