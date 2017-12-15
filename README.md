@@ -17,6 +17,7 @@ Follow along with these steps, making sure to read all of the instructions befor
 
 Work on fetching data from this API: https://bot-battler-api.herokuapp.com/api/v1/bots. The response should contain an array of bot objects that are structured as follows:
 ```
+  {
     "id": 301,
     "name": "gs-98",
     "health": 71,
@@ -27,4 +28,4 @@ Work on fetching data from this API: https://bot-battler-api.herokuapp.com/api/v
     "avatar_url": "https://robohash.org/voluptasetab.png?size=300x300&set=set1",
     "created_at": "2017-12-08T14:13:45.272Z",
     "updated_at": "2017-12-08T14:13:45.272Z"
-  } ````
+  } ```
