@@ -1,6 +1,6 @@
 # Module 4 Code Challenge: Bot Battlr
 
-Welcome to Bot Battlr, the one and only spot in the known universe where you can custom build your own Bot Army!
+Welcome to __Bot Battlr__, the one and only spot in the known universe where you can custom build your own Bot Army!
 
 Here's the scenario: a galactic overlord has hired you, a galatic web developer, to develop a galatic web app that will allow him/her to browse through a list of robots, view a robot's details, and, if the bot is to his/her liking, enlist that bot into his army.
 
@@ -22,7 +22,7 @@ BotPage is the highest component below App, and serves as the main container for
 ### Instructions
 Follow along with these steps, making sure to read all of the instructions before beginning to code.
 
-1.  Fetching Bots
+#### 1.  Fetching Bots
 
  Work on fetching data from this API: https://bot-battler-api.herokuapp.com/api/v1/bots. The response should contain an array of bot objects that are structured as follows:
   ```
@@ -41,15 +41,15 @@ Follow along with these steps, making sure to read all of the instructions befor
   ```
    Based on the current structure of the app, think about where this array of bots needs to be stored.
 
-2.  Indexing bots
+#### 2.  Indexing bots
 
   After you have fetched the bots, work on rendering them into `BotCollection` A component called `BotCard` has been provided to you to display the information about an individual bot in a list format.
 
-3.  Enlisting bots
+#### 3.  Enlisting bots
 
  Once the list is complete, work on the functionality of the list. Clicking a card should add a bot to the user's list of bots. Bots that have been chosen should be displayed within `YourBotArmy` (feel free to reuse `BotCard`)
 
-##Checkpoint!
+## Checkpoint!
 
 If you have gotten this far, you have hit the checkpoint. Your app should look like the following:
 
