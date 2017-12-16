@@ -62,7 +62,7 @@ If you have gotten this far, you have hit the checkpoint. Your app should look l
 
 [checkpoint]: ./public/checkpoint_demo.gif "Checkpoint demo"
 
-Before proceeding to the next part of the challenge, __be sure to make a commit at this point__. That way if your code breaks or you do not get to finish the next feature, we will be able to see that you were able to get up to this point. 
+Before proceeding to the next part of the challenge, __be sure to stage a commit at this point__. That way if your code breaks or you do not get to finish the next feature, we will be able to see that you were able to get up to this point. 
 
 
 #### 4. Refactor
