@@ -4,7 +4,7 @@ Welcome to __Bot Battlr__, the one and only spot in the known universe where you
 
 Here's the scenario: a galactic overlord has hired you, a galatic web developer, to develop a galatic web app that will allow him/her to browse through a list of robots, view a robot's details, and, if the bot is to his/her liking, enlist that bot into his/her army.
 
-All of the code to style the page has been written for you, meaning that you should be adding to the code rather than editing it; your main responsibility will be to get information, render it into the right containers, and build out the page's functionality.
+All of the code to style the page has been written for you, meaning that you should be adding to the code rather than editing it; your main responsibility will be to get information, render it into the right containers, and build out the page's functionality. Try your best to find the right places to insert code into the established code base, but if your finished product has some styling issues, don't worry too much about it.
 
 
 ## What You Already Have
@@ -84,4 +84,16 @@ If you have finished all of the above features before time is called, consider b
 
 ## Finishing up
 
-When time is called, please stop coding, push your code to your fork, and submit a pull request from Github. If you have any clarifying questions during or after the code challenge, please feel free to ask your instructor. __Good Luck!__
+When time is called, please stop coding, push your code to your fork, and submit a pull request from Github. If you have any clarifying questions during or after the code challenge, please feel free to ask your instructor.
+
+## Criteria
+1. Props and state - Is state maintained in the right components? Are the functions to change state defined and executed in the appropriate places? Are the appropriate props passed from component to component?
+
+2. Code structure and efficiency - Is the code clean and easy to read? Are large chunks of code separated into reusable functions? Is functionality appropriately delegated between smart and presentational components?
+
+3. Rendering - Is information rendered in the correct locations? Were you able to conditionally render different components (i.e. `BotSpecs` and `BotCollection`)? 
+
+4. Component lifecycle - Are the right component lifecycle methods used? Are they used for the correct purposes?
+
+
+__Good Luck!__
