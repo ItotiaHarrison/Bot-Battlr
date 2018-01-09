@@ -91,9 +91,8 @@ When time is called, please stop coding, push your code to your fork, and submit
 
 2. Code structure and efficiency - Is the code clean and easy to read? Are large chunks of code separated into reusable functions? Is functionality appropriately delegated between smart and presentational components?
 
-3. Rendering - Is information rendered in the correct locations? Were you able to conditionally render different components (i.e. `BotSpecs` and `BotCollection`)? 
+3. Component lifecycle - Are the right component lifecycle methods used? Are they used for the correct purposes?
 
-4. Component lifecycle - Are the right component lifecycle methods used? Are they used for the correct purposes?
-
+4. Rendering - Is information rendered in the correct locations? Were you able to conditionally render different components (i.e. `BotSpecs` and `BotCollection`)? 
 
 __Good Luck!__
