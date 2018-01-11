@@ -89,11 +89,10 @@ When time is called, please stop coding, push your code to your fork, and submit
 ## Criteria
 1. Props and state - Is state maintained in the right components? Are the functions to change state defined and executed in the appropriate places? Are the appropriate props passed from component to component?
 
-2. Code structure and efficiency - Is the code clean and easy to read? Are large chunks of code separated into reusable functions? Is functionality appropriately delegated between smart and presentational components?
+2. Code structure and efficiency - Is the code clean and easy to read? Are large chunks of code separated into reusable functions? Is functionality appropriately delegated between class and functional components?
 
-3. Rendering - Is information rendered in the correct locations? Were you able to conditionally render different components (i.e. `BotSpecs` and `BotCollection`)? 
+3. Component lifecycle - Are the right component lifecycle methods used? Are they used for the correct purposes?
 
-4. Component lifecycle - Are the right component lifecycle methods used? Are they used for the correct purposes?
-
+4. Rendering - Is information rendered in the correct locations? Were you able to conditionally render different components (i.e. `BotSpecs` and `BotCollection`)? 
 
 __Good Luck!__
