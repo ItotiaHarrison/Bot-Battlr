@@ -50,8 +50,9 @@ After you have fetched the bots, work on rendering them into `BotCollection` A c
 
 #### 3.  Enlisting bots
 
-Once the list is complete, work on the functionality of the list. Clicking a card should add a bot to the user's list of bots. Bots that have been chosen should be displayed within `YourBotArmy` (feel free to reuse `BotCard`)
+Once the list is complete, work on the functionality of enlisting bots into your army. Clicking a card should add a bot to the user's list of bots. Bots that have been chosen should be displayed within `YourBotArmy` (feel free to reuse `BotCard`).
 
+_Note that nothing needs to be persisted. Refreshing the page should clear out the current army._
 
 
 ## Checkpoint!
