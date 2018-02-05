@@ -69,3 +69,7 @@ span {
   flex-wrap: nowrap;
   min-height: 100%;
 }
+
+.ui.grid {
+  padding: 0px 20px;
+}
