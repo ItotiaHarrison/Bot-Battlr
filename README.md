@@ -19,7 +19,7 @@ All of the code to style the page has been written for you, meaning that you sho
 
 
 ## Instructions
-Follow along with these steps, making sure to read all of the instructions before beginning to code.
+To start, run `npm install && npm start` to get the app up and running. Follow along with these steps, making sure to read all of the instructions before beginning to code.
 
 #### 1.  Fetching Bots
 
