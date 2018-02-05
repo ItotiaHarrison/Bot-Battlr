@@ -58,7 +58,12 @@ const BotSpecs = props => {
                 </div>
               </div>
             </div>
-            <button className="ui button fluid" onClick={seeAll}>
+            <button
+              className="ui button fluid"
+              onClick={() =>
+                console.log('connect this to a function that shows all bots')
+              }
+            >
               Go Back
             </button>
             <button
