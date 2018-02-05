@@ -2,7 +2,7 @@
 
 Welcome to __Bot Battlr__, the one and only spot in the known universe where you can custom build your own Bot Army!
 
-Here's the scenario: a galactic overlord has hired you, a galactic web developer, to develop a galactic web app that will allow their to browse through a list of robots, view a robot's details, and, if the bot is to their liking, enlist that bot into their army.
+Here's the scenario: a galactic overlord has hired you, a galactic web developer, to develop a galactic web app that will allow them to browse through a list of robots, view a robot's details, and, if the bot is to their liking, enlist that bot into their army.
 
 All of the code to style the page has been written for you, meaning that you should be adding to the code rather than editing it; your main responsibility will be to get information, render it into the right containers, and build out the page's functionality. Try your best to find the right places to insert code into the established code base, but if your finished product has some styling issues, don't worry too much about it.
 
