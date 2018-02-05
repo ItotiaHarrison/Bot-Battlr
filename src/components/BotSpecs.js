@@ -77,6 +77,7 @@ const BotSpecs = props => {
       </div>
     </div>
   );
+
 };
 
 export default BotSpecs;

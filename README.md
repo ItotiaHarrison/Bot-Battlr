@@ -2,30 +2,30 @@
 
 Welcome to __Bot Battlr__, the one and only spot in the known universe where you can custom build your own Bot Army!
 
-Here's the scenario: a galactic overlord has hired you, a galatic web developer, to develop a galatic web app that will allow him/her to browse through a list of robots, view a robot's details, and, if the bot is to his/her liking, enlist that bot into his/her army.
+Here's the scenario: a galactic overlord has hired you, a galactic web developer, to develop a galactic web app that will allow thier to browse through a list of robots, view a robot's details, and, if the bot is to their liking, enlist that bot into their army.
 
 All of the code to style the page has been written for you, meaning that you should be adding to the code rather than editing it; your main responsibility will be to get information, render it into the right containers, and build out the page's functionality. Try your best to find the right places to insert code into the established code base, but if your finished product has some styling issues, don't worry too much about it.
 
 
 ## What You Already Have
 
-`BotCard` and `BotSpecs` are presentational components that have been provided for you that will render out information about an individual bot formatted for a list view and for a full view, respectively. They are prestyled, and it is your responsibility to get the data into them.
+`BotCard` and `BotSpecs` are presentational components that have been provided for you that will render out information about an individual bot formatted for a list view and for a full view, respectively. They are pre-styled, and it is your responsibility to get the data into them.
 
-`BotCollection` and `YourBotArmy` are container components. `BotCollection` is where all the bots will be displayed, while `YourBotArmy` (the green portion on the top of the screen) will only display the bots that have been selected by the user. 
+`BotCollection` and `YourBotArmy` are container components. `BotCollection` is where all the bots will be displayed, while `YourBotArmy` (the green portion on the top of the screen) will only display the bots that have been selected by the user.
 
-`BotPage` is the highest component below App, and serves as the main container for all of the pieces of the page. 
+`BotPage` is the highest component below App, and serves as the main container for all of the pieces of the page.
 
 
 
 
 ## Instructions
-Follow along with these steps, making sure to read all of the instructions before beginning to code.
+To start, run `npm install && npm start` to get the app up and running. Follow along with these steps, making sure to read all of the instructions before beginning to code.
 
 #### 1.  Fetching Bots
 
 Work on fetching data from this API: https://bot-battler-api.herokuapp.com/api/v1/bots. The response should contain an array of bot objects that are structured as follows:
 
-  ```
+  ```json
     {
       "id": 301,
       "name": "gs-98",
@@ -39,7 +39,7 @@ Work on fetching data from this API: https://bot-battler-api.herokuapp.com/api/v
       "updated_at": "2017-12-08T14:13:45.272Z"
     }
   ```
-  
+
 Based on the current structure of the app, think about where this array of bots needs to be stored.
 
 
@@ -63,14 +63,14 @@ If you have gotten this far, you have hit the checkpoint. Your app should look l
 
 [checkpoint]: ./public/checkpoint_demo.gif "Checkpoint demo"
 
-Before proceeding to the next part of the challenge, __be sure to stage a commit at this point__. That way if your code breaks or you do not get to finish the next feature, we will be able to see that you were able to get up to this point. 
+Before proceeding to the next part of the challenge, __be sure to stage a commit at this point__. That way if your code breaks or you do not get to finish the next feature, we will be able to see that you were able to get up to this point.
 
 
 #### 4. Refactor
 
 Now that you have some of the functionality of your app, it's time to refactor the code. Rather than enlisting the bot into the army, clicking on the card should instead display a show view (`BotSpecs`) for that bot, which should replace `BotsCollection`. BotSpecs should have two buttons: one to go back to the list view and another to enlist that bot.
 
-This refactored version should look like the following: 
+This refactored version should look like the following:
 
 ![alt text][full_demo]
 
@@ -79,7 +79,7 @@ This refactored version should look like the following:
 
 #### BONUS
 
-If you have finished all of the above features before time is called, consider building out an extra feature. This could a sort, a filter, or a search. This deliverable is entirely optional, so do not feel pressure to meet this goal. 
+If you have finished all of the above features before time is called, consider building out an extra feature. This could a sort, a filter, or a search. This deliverable is entirely optional, so do not feel pressure to meet this goal.
 
 
 
@@ -94,6 +94,6 @@ When time is called, please stop coding, push your code to your fork, and submit
 
 3. Component lifecycle - Are the right component lifecycle methods used? Are they used for the correct purposes?
 
-4. Rendering - Is information rendered in the correct locations? Were you able to conditionally render different components (i.e. `BotSpecs` and `BotCollection`)? 
+4. Rendering - Is information rendered in the correct locations? Were you able to conditionally render different components (i.e. `BotSpecs` and `BotCollection`)?
 
 __Good Luck!__
