@@ -50,7 +50,10 @@ After you have fetched the bots, work on rendering them into `BotCollection`, wh
 
 #### 3.  Enlisting bots
 
-Once the list is complete, work on the functionality of enlisting bots into your army. Clicking a card should add a bot to the user's list of bots. Bots that have been chosen should be displayed within `YourBotArmy`, which should also be a child of `BotsPage`  (feel free to reuse `BotCard`). A bot should be enlisted only once. If you click on a bot in your army, that bot should be removed from your army.
+Once the list is complete, work on the functionality of enlisting bots into your army. Clicking a card should add a bot to the user's list of bots. Bots that have been chosen should be displayed within `YourBotArmy`, which should also be a child of `BotsPage`  (feel free to reuse `BotCard`). 
+ - A bot should be enlisted only once. 
+ - Only **one** bot from each `bot_class` can be enlisted 
+ - If you click on a bot in your army, that bot should be removed from your army.
 
 _Note that nothing needs to be persisted. Refreshing the page should clear out the current army._
 
