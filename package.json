@@ -1,14 +1,15 @@
 {
-  "name": "bot-battlr",
+  "name": "bot-battlr-new",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "dependencies": {  
+    "json-server": "^0.12.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",
     "semantic-ui-react": "^0.77.0"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "json-server --watch db.json & PORT=3001 react-scripts start",
   }
 }
