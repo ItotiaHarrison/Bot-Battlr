@@ -19,11 +19,11 @@ All of the code to style the page has been written for you, meaning that you sho
 
 
 ## Instructions
-To start, run `npm install && npm start` to get the app up and running. Follow along with these steps, making sure to read all of the instructions before beginning to code.
+To start, run `npm install && npm start` to get the app up and running, this will also spin up a json server on port 3000. Follow along with these steps, making sure to read all of the instructions before beginning to code.
 
 #### 1.  Fetching Bots
 
-Work on fetching data from this API: https://bot-battler-api.herokuapp.com/api/v1/bots. The response should contain an array of bot objects that are structured as follows:
+Work on fetching data from this API: http://localhost:3000/bots. The response should contain an array of bot objects that are structured as follows:
 
   ```json
     {
