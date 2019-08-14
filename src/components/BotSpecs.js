@@ -7,13 +7,22 @@ const BotSpecs = props => {
 
   switch (bot.bot_class) {
     case "Assault":
-      botType = <i className="icon large circular military" />;
+      botType = <i className="icon military" />;
       break;
     case "Defender":
-      botType = <i className="icon large circular shield" />;
+      botType = <i className="icon shield" />;
       break;
     case "Support":
-      botType = <i className="icon large circular ambulance" />;
+      botType = <i className="icon plus circle" />;
+      break;
+    case "Medic":
+      botType = <i className="icon ambulance" />;
+      break;
+    case "Witch":
+      botType = <i className="icon magic" />;
+      break;
+    case "Captain":
+      botType = <i className="icon star" />;
       break;
     default:
       botType = <div />;

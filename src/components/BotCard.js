@@ -13,7 +13,16 @@ const BotCard = props => {
       botType = <i className="icon shield" />;
       break;
     case "Support":
+      botType = <i className="icon plus circle" />;
+      break;
+    case "Medic":
       botType = <i className="icon ambulance" />;
+      break;
+    case "Witch":
+      botType = <i className="icon magic" />;
+      break;
+    case "Captain":
+      botType = <i className="icon star" />;
       break;
     default:
       botType = <div />;
