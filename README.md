@@ -1,8 +1,9 @@
 # React Immersive Code Challenge: Bot Battlr
 
-Welcome to __Bot Battlr__, the one and only spot in the known universe where you can custom build your own Bot Army! 
-This is our app:
+Welcome to __Bot Battlr__, the one and only spot in the known universe where you can custom build your own Bot Army! This is our app:
+
 ![alt text][checkpoint]
+
 [checkpoint]: ./public/checkpoint_demo.gif "Checkpoint demo"
 
 Here's the scenario: a galactic overlord has hired you, a galactic web developer, to develop a galactic web app that will allow them to browse through a list of robots, view a robot's details, and, enlist a bot into their army.
@@ -49,7 +50,7 @@ All of the code to style the page has been written for you, meaning that you sho
 - As a user, I should be able to see profiles of all bots rendered in `BotCollection`.
 - As a user, I should be able to add an individual bot to my army by clicking on it. The selected bot should render in the `YourBotArmy` component. The bot can be enlisted only **once**. The bot **does not** disappear from the `BotCollection`.
 - As a user, I should be able to release a bot from my army by clicking on it. The bot disappears from the `YourBotArmy` component.
-- As a user, I can sort bots by their health, damage or armor.
+- As a user, I can sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
 
 _Note that nothing needs to be persisted. Refreshing the page should clear out the current army._
 
@@ -60,6 +61,7 @@ If you have finished the Core Deliverables, **stage a commit at this point!**xs
 - As a user, I should be able to choose if I want to enlist a bot into my army or just see thier data. Clicking on the card should instead display a show view (`BotSpecs`) for that bot, which should replace `BotsCollection`. BotSpecs should have two buttons: one to go back to the list view and another to enlist that bot. Your app could look like the following:
 
 ![alt text][full_demo]
+
 [full_demo]: ./public/full_demo.gif "Full demo"
 
 - As a user, I can filter bots by their class. We can select a few filters at the same time.
