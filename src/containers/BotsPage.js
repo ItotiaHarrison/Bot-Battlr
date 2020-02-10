@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 
-class BotsPage extends React.Component {
+class BotsPage extends Component {
   //start here with your code for step one
 
   render() {

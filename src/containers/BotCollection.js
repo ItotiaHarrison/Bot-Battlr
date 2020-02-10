@@ -1,7 +1,6 @@
-import React from "react";
-import BotCard from "../components/BotCard";
+import React, { Component } from "react";
 
-class BotCollection extends React.Component {
+class BotCollection extends Component {
   //your code here
 
   render(){

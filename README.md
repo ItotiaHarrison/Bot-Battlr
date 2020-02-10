@@ -64,6 +64,7 @@ If you have finished the Core Deliverables, **stage a commit at this point!**xs
 
 [full_demo]: ./public/full_demo.gif "Full demo"
 
+- As a user, when I enlist a bot it will be **removed** from the `BotCollection` and added to `YourBotArmy`.
 - As a user, I can filter bots by their class. We can select a few filters at the same time.
 - As a user, I can only enlist **one** bot from each `bot_class`. The classes are `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
 
