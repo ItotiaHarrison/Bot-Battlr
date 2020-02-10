@@ -1,29 +1,18 @@
-# Module 4 Code Challenge: Bot Battlr
+# React Immersive Code Challenge: Bot Battlr
 
 Welcome to __Bot Battlr__, the one and only spot in the known universe where you can custom build your own Bot Army!
 
-Here's the scenario: a galactic overlord has hired you, a galactic web developer, to develop a galactic web app that will allow them to browse through a list of robots, view a robot's details, and, if the bot is to their liking, enlist that bot into their army.
-
-All of the code to style the page has been written for you, meaning that you should be adding to the code rather than editing it; your main responsibility will be to get information, render it into the right containers, and build out the page's functionality. Try your best to find the right places to insert code into the established code base, but if your finished product has some styling issues, don't worry too much about it.
-
-
-## What You Already Have
-
-`BotCard` and `BotSpecs` are presentational components that have been provided for you that will render out information about an individual bot formatted for a list view and for a full view, respectively. They are pre-styled, and it is your responsibility to get the data into them.
-
-`BotCollection` and `YourBotArmy` are container components. `BotCollection` is where all the bots will be displayed, while `YourBotArmy` (the green portion on the top of the screen) will only display the bots that have been selected by the user.
-
-`BotPage` is the highest component below App, and serves as the main container for all of the pieces of the page.
-
-
-
+Here's the scenario: a galactic overlord has hired you, a galactic web developer, to develop a galactic web app that will allow them to browse through a list of robots, view a robot's details, and, enlist a bot into their army.
 
 ## Instructions
-To start, run `npm install && npm start` to get the app up and running, this will also spin up a json server on port 3000. Follow along with these steps, making sure to read all of the instructions before beginning to code.
+For this project, you’ll be building out a React application that displays a list of available bots, among other features. Try your best to find the right places to insert code into the established code base.
 
-#### 1.  Fetching Bots
+Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
 
-Work on fetching data from this API: http://localhost:3000/bots. The response should contain an array of bot objects that are structured as follows:
+## Setup
+After cloning down the project
+- Run `npm install` in your terminal
+- Run `npm start` and a JSON server will spin up a mock back-end API and you can access the data at `http://localhost:3000/bots`. Your react application will also start, on port `3001`. The response should contain an array of bot objects that are structured as follows:
 
   ```json
     {
@@ -40,7 +29,36 @@ Work on fetching data from this API: http://localhost:3000/bots. The response sh
     }
   ```
 
-Based on the current structure of the app, think about where this array of bots needs to be stored.
+
+
+## What You Already Have
+
+`BotPage` is the highest component below App, and serves as the main container for all of the pieces of the page.
+
+`BotCollection` and `YourBotArmy` are container components. `BotCollection` is where all the bots will be displayed, while `YourBotArmy` (the green portion on the top of the screen) will only display the bots that have been selected by the user.
+
+`BotCard` and `BotSpecs` are presentational components that have been provided for you that will render out information about an individual bot formatted for a list view and for a full view, respectively. They are pre-styled, and it is your responsibility to get the data into them.
+
+All of the code to style the page has been written for you, meaning that you should be adding to the code rather than editing it; however, if your finished product has some styling issues, don't worry too much about it.
+
+## Core Deliverables
+
+- As a user, I should be able to see profiles of all bots rendered in `BotCollection`.
+- As a user, I should be able to add an individual bot to my army by clicking on it. The selected bot should render in the `YourBotArmy` component. The bot can be enlisted only **once**. The bot **does not** disappear from the `BotCollection`.
+- As a user, I should be able to release a bot from my army by clicking on it. The bot disappears from the `YourBotArmy` component.
+
+_Note that nothing needs to be persisted. Refreshing the page should clear out the current army._
+
+## Advanced Deliverables
+
+>If you have finished the Core Deliverables, **stage a commit at this point!**
+
+- As a user, I can sort bots by their health, damage or armor.
+- As a user, I can filter bots by their class. We can select a few filters at the same time.
+
+
+## Instructions
+To start, run `npm install && npm start` to get the app up and running, this will also spin up a json server on port 3000. Follow along with these steps, making sure to read all of the instructions before beginning to code.
 
 
 #### 2.  Indexing bots
@@ -80,23 +98,42 @@ This refactored version should look like the following:
 [full_demo]: ./public/full_demo.gif "Full demo"
 
 
-#### BONUS
+## Rubric
 
-If you have finished all of the above features before time is called, consider building out an extra feature. This could a sort, a filter, or a search. This deliverable is entirely optional, so do not feel pressure to meet this goal.
+### Props & State
 
+1. No code or very little code has been written or the code doesn't run. If it runs, no deliverables have been met. Not managed to set state or pass props successfully.
 
+2. State is not being set or updated. Props are not being passed down, or you are passing down the right prop but trying to access it incorrectly (wrong name, unnecessary `this`, `state` instead of `props`) or key props are missing. API call does not successfully populate state.
 
-## Finishing up
+3. State is working. However, it may be in the wrong component, it might be nested oddly or might have some unnecessary state. Props are being passed unnecessarily to components. Functions that change or calculate state are not defined in the component that they are most closely tied to.
 
-When time is called, please stop coding, push your code to your fork, and submit a pull request from Github. If you have any clarifying questions during or after the code challenge, please feel free to ask your instructor.
+4. State works and is held by the lowest common component. No unnecessary state is created. Only the necessary props are being passed down. Functions used to edit state are passed down.
 
-## Criteria
-1. Props and state - Is state maintained in the right components? Are the functions to change state defined and executed in the appropriate places? Are the appropriate props passed from component to component?
+5. Advanced deliverables are met.
 
-2. Code structure and efficiency - Is the code clean and easy to read? Are large chunks of code separated into reusable functions? Is functionality appropriately delegated between class and functional components?
+### Code Structure/Efficiency
 
-3. Component lifecycle - Are the right component lifecycle methods used? Are they used for the correct purposes?
+1. No code or very little code has been written or the code doesn't run, i.e. syntax errors, imports missing, etc. If it runs, no deliverables have been met.
 
-4. Rendering - Is information rendered in the correct locations? Were you able to conditionally render different components (i.e. `BotSpecs` and `BotCollection`)?
+2. Starter components have been unnecessarily modified and broken. There is no reference to componentDidMount. Incorrect or unnecessary lifecycle methods are used.
+
+3. Fetch is triggered in the right place. Code is not abstracted into clear methods. Additional components have been added which serve no purpose. Props and variables could be named consistently and descriptively.
+
+4. Components are structured in a logical way. Class components only used when needed, functional components used for everything else. Code is abstracted into clear methods. Used object destructuring and spread operator successfully.
+
+5. Advanced deliverables met. Uses some of the following: destructuring, functional components, spreading, hooks, pure functions, performance is taken into account.
+
+### Rendering
+
+1. No code or very little code has been written or the code doesn't run. If it runs, no deliverables have been met.
+
+2. Did not manage to render everything that was asked for in the deliverables.
+
+3. Renders everything that is asked for in the deliverables. Components could be more abstract/reusable. May have created own components instead of using the components provided.
+
+4. Renders everything that is asked for in the deliverables. Components are abstract/reusable. No unnecessary components were created.
+
+5. Everything from 4 plus extra features were added that are not listed in the deliverables.
 
 __Good Luck!__
