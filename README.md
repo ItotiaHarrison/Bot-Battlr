@@ -1,6 +1,9 @@
 # React Immersive Code Challenge: Bot Battlr
 
-Welcome to __Bot Battlr__, the one and only spot in the known universe where you can custom build your own Bot Army!
+Welcome to __Bot Battlr__, the one and only spot in the known universe where you can custom build your own Bot Army! 
+This is our app:
+![alt text][checkpoint]
+[checkpoint]: ./public/checkpoint_demo.gif "Checkpoint demo"
 
 Here's the scenario: a galactic overlord has hired you, a galactic web developer, to develop a galactic web app that will allow them to browse through a list of robots, view a robot's details, and, enlist a bot into their army.
 
@@ -35,7 +38,7 @@ After cloning down the project
 
 `BotPage` is the highest component below App, and serves as the main container for all of the pieces of the page.
 
-`BotCollection` and `YourBotArmy` are container components. `BotCollection` is where all the bots will be displayed, while `YourBotArmy` (the green portion on the top of the screen) will only display the bots that have been selected by the user.
+`BotCollection` and `YourBotArmy` are container components, which are children of `BotPage`. `BotCollection` is where all the bots will be displayed, while `YourBotArmy` (the green portion on the top of the screen) will only display the bots that have been selected by the user.
 
 `BotCard` and `BotSpecs` are presentational components that have been provided for you that will render out information about an individual bot formatted for a list view and for a full view, respectively. They are pre-styled, and it is your responsibility to get the data into them.
 
@@ -46,57 +49,21 @@ All of the code to style the page has been written for you, meaning that you sho
 - As a user, I should be able to see profiles of all bots rendered in `BotCollection`.
 - As a user, I should be able to add an individual bot to my army by clicking on it. The selected bot should render in the `YourBotArmy` component. The bot can be enlisted only **once**. The bot **does not** disappear from the `BotCollection`.
 - As a user, I should be able to release a bot from my army by clicking on it. The bot disappears from the `YourBotArmy` component.
+- As a user, I can sort bots by their health, damage or armor.
 
 _Note that nothing needs to be persisted. Refreshing the page should clear out the current army._
 
 ## Advanced Deliverables
 
->If you have finished the Core Deliverables, **stage a commit at this point!**
+If you have finished the Core Deliverables, **stage a commit at this point!**xs
 
-- As a user, I can sort bots by their health, damage or armor.
-- As a user, I can filter bots by their class. We can select a few filters at the same time.
-
-
-## Instructions
-To start, run `npm install && npm start` to get the app up and running, this will also spin up a json server on port 3000. Follow along with these steps, making sure to read all of the instructions before beginning to code.
-
-
-#### 2.  Indexing bots
-
-After you have fetched the bots, work on rendering them into `BotCollection`, which should be a child of `BotsPage`. A component called `BotCard` has been provided to you to display the information about an individual bot in a list format.
-
-
-#### 3.  Enlisting bots
-
-Once the list is complete, work on the functionality of enlisting bots into your army. Clicking a card should add a bot to the user's list of bots. Bots that have been chosen should be displayed within `YourBotArmy`, which should also be a child of `BotsPage`  (feel free to reuse `BotCard`). 
- - A bot should be enlisted only once. 
- - Only **one** bot from each `bot_class` can be enlisted. The classes are `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
- - If you click on a bot in your army, that bot should be removed from your army.
-
-_Note that nothing needs to be persisted. Refreshing the page should clear out the current army._
-
-
-## Checkpoint!
-
-If you have gotten this far, you have hit the checkpoint. Your app should look like the following:
-
-![alt text][checkpoint]
-
-[checkpoint]: ./public/checkpoint_demo.gif "Checkpoint demo"
-
-Before proceeding to the next part of the challenge, __be sure to stage a commit at this point__. That way if your code breaks or you do not get to finish the next feature, we will be able to see that you were able to get up to this point.
-
-
-#### 4. Refactor
-
-Now that you have some of the functionality of your app, it's time to refactor the code. Rather than enlisting the bot into the army, clicking on the card should instead display a show view (`BotSpecs`) for that bot, which should replace `BotsCollection`. BotSpecs should have two buttons: one to go back to the list view and another to enlist that bot.
-
-This refactored version should look like the following:
+- As a user, I should be able to choose if I want to enlist a bot into my army or just see thier data. Clicking on the card should instead display a show view (`BotSpecs`) for that bot, which should replace `BotsCollection`. BotSpecs should have two buttons: one to go back to the list view and another to enlist that bot. Your app could look like the following:
 
 ![alt text][full_demo]
-
 [full_demo]: ./public/full_demo.gif "Full demo"
 
+- As a user, I can filter bots by their class. We can select a few filters at the same time.
+- As a user, I can only enlist **one** bot from each `bot_class`. The classes are `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
 
 ## Rubric
 
