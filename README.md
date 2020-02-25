@@ -50,7 +50,7 @@ All of the code to style the page has been written for you, meaning that you sho
 - As a user, I should be able to see profiles of all bots rendered in `BotCollection`.
 - As a user, I should be able to add an individual bot to my army by clicking on it. The selected bot should render in the `YourBotArmy` component. The bot can be enlisted only **once**. The bot **does not** disappear from the `BotCollection`.
 - As a user, I should be able to release a bot from my army by clicking on it. The bot disappears from the `YourBotArmy` component.
-- As a user, I can sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
+- As a user, I should be able to discharge a bot from their service forever, by deleting it both from the backend and frontend. For this task, create a button on the `BotCard`.
 
 _Note that nothing needs to be persisted. Refreshing the page should clear out the current army._
 
@@ -66,6 +66,7 @@ If you have finished the Core Deliverables, **stage a commit at this point!**xs
 
 - As a user, when I enlist a bot it will be **removed** from the `BotCollection` and added to `YourBotArmy`.
 - As a user, I can filter bots by their class. We can select a few filters at the same time.
+- As a user, I can sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
 - As a user, I can only enlist **one** bot from each `bot_class`. The classes are `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
 
 ## Rubric
