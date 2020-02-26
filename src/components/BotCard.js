@@ -61,6 +61,10 @@ const BotCard = props => {
             <i className="icon shield" />
             {bot.armor}
           </span>
+          <span>
+          <button className="ui red button"
+          onClick={() => console.log("add code to connect event listener")}>x</button>
+          </span>
         </div>
       </div>
     </div>

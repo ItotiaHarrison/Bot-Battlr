@@ -50,13 +50,12 @@ All of the code to style the page has been written for you, meaning that you sho
 - As a user, I should be able to see profiles of all bots rendered in `BotCollection`.
 - As a user, I should be able to add an individual bot to my army by clicking on it. The selected bot should render in the `YourBotArmy` component. The bot can be enlisted only **once**. The bot **does not** disappear from the `BotCollection`.
 - As a user, I should be able to release a bot from my army by clicking on it. The bot disappears from the `YourBotArmy` component.
-- As a user, I can sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
+- As a user, I should be able to discharge a bot from their service forever, by clicking the red button marked "x", which would delete the bot both from the backend and from the `YourBotArmy` on the frontend.
 
-_Note that nothing needs to be persisted. Refreshing the page should clear out the current army._
 
 ## Advanced Deliverables
 
-If you have finished the Core Deliverables, **stage a commit at this point!**xs
+If you have finished the Core Deliverables, **stage a commit at this point!**
 
 - As a user, I should be able to choose if I want to enlist a bot into my army or just see thier data. Clicking on the card should instead display a show view (`BotSpecs`) for that bot, which should replace `BotsCollection`. BotSpecs should have two buttons: one to go back to the list view and another to enlist that bot. Your app could look like the following:
 
@@ -64,6 +63,7 @@ If you have finished the Core Deliverables, **stage a commit at this point!**xs
 
 [full_demo]: ./public/full_demo.gif "Full demo"
 
+- As a user, I can sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
 - As a user, I can filter bots by their class. We can select a few filters at the same time.
 - As a user, I can only enlist **one** bot from each `bot_class`. The classes are `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
 
