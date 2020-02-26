@@ -63,8 +63,13 @@ If you have finished the Core Deliverables, **stage a commit at this point!**
 
 [full_demo]: ./public/full_demo.gif "Full demo"
 
+<<<<<<< HEAD
 - As a user, I can sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
+=======
+- As a user, when I enlist a bot it will be **removed** from the `BotCollection` and added to `YourBotArmy`.
+>>>>>>> 56871cbb414c814f571845f282110e188528c51d
 - As a user, I can filter bots by their class. We can select a few filters at the same time.
+- As a user, I can sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
 - As a user, I can only enlist **one** bot from each `bot_class`. The classes are `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
 
 ## Rubric
