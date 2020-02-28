@@ -1,32 +1,15 @@
 import React from "react";
 
+const botTypeClasses = {
+  Assault: "icon military",
+  Defender: "icon shield",
+  Support: "icon plus circle",
+  Medic: "icon ambulance",
+  Witch: "icon magic",
+  Captain: "icon star"
+};
+
 const BotCard = props => {
-
-  let botType;
-
-  switch (props.bot.bot_class) {
-    case "Assault":
-      botType = <i className="icon military" />;
-      break;
-    case "Defender":
-      botType = <i className="icon shield" />;
-      break;
-    case "Support":
-      botType = <i className="icon plus circle" />;
-      break;
-    case "Medic":
-      botType = <i className="icon ambulance" />;
-      break;
-    case "Witch":
-      botType = <i className="icon magic" />;
-      break;
-    case "Captain":
-      botType = <i className="icon star" />;
-      break;
-    default:
-      botType = <div />;
-  }
-
   return (
     <div className="ui column">
       <div
@@ -39,9 +22,9 @@ const BotCard = props => {
         </div>
         <div className="content">
           <div className="header">
-            {props.bot.name} {botType}
+            {props.bot.name}
+            <i className={botTypeClasses[props.bot.bot_class]} />
           </div>
-
           <div className="meta text-wrap">
             <small>{props.bot.catchphrase}</small>
           </div>
@@ -61,14 +44,21 @@ const BotCard = props => {
             {props.bot.armor}
           </span>
           <span>
-          <button className="ui red button"
-          onClick={() => console.log("add code to connect event listener")}>x</button>
+            <div className="ui center aligned segment basic">
+              <button
+                className="ui mini red button"
+                onClick={() =>
+                  console.log("add code to connect event listener")
+                }
+              >
+                x
+              </button>
+            </div>
           </span>
         </div>
       </div>
     </div>
   );
-
 };
 
 export default BotCard;

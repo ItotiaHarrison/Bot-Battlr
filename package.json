@@ -10,6 +10,6 @@
     "semantic-ui-react": "^0.77.0"
   },
   "scripts": {
-    "start": "json-server --watch db.json & PORT=3001 react-scripts start"
+    "start": "json-server --watch db.json -p 6001 & open http://localhost:6001/bots & PORT=6002 react-scripts start && fg"
   }
 }

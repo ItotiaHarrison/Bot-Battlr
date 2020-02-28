@@ -1,32 +1,15 @@
 import React from "react";
 
+const botTypeClasses = {
+  Assault: "icon military",
+  Defender: "icon shield",
+  Support: "icon plus circle",
+  Medic: "icon ambulance",
+  Witch: "icon magic",
+  Captain: "icon star"
+};
+
 const BotSpecs = props => {
-
-  let botType;
-
-  switch (props.bot.bot_class) {
-    case "Assault":
-      botType = <i className="icon military" />;
-      break;
-    case "Defender":
-      botType = <i className="icon shield" />;
-      break;
-    case "Support":
-      botType = <i className="icon plus circle" />;
-      break;
-    case "Medic":
-      botType = <i className="icon ambulance" />;
-      break;
-    case "Witch":
-      botType = <i className="icon magic" />;
-      break;
-    case "Captain":
-      botType = <i className="icon star" />;
-      break;
-    default:
-      botType = <div />;
-  }
-
   return (
     <div className="ui segment">
       <div className="ui two column centered grid">
@@ -45,7 +28,8 @@ const BotSpecs = props => {
               {props.bot.catchphrase}
             </p>
             <strong>
-              Class: {props.bot.bot_class} {botType}
+              Class: {props.bot.bot_class}
+              <i className={botTypeClasses[props.bot.bot_class]} />
             </strong>
             <br />
             <div className="ui segment">
@@ -69,7 +53,7 @@ const BotSpecs = props => {
             <button
               className="ui button fluid"
               onClick={() =>
-                console.log('connect this to a function that shows all bots')
+                console.log("connect this to a function that shows all bots")
               }
             >
               Go Back
@@ -89,7 +73,6 @@ const BotSpecs = props => {
       </div>
     </div>
   );
-
 };
 
 export default BotSpecs;

@@ -1,6 +1,6 @@
 # React Immersive Code Challenge: Bot Battlr
 
-Welcome to __Bot Battlr__, the one and only spot in the known universe where you can custom build your own Bot Army! This is our app:
+Welcome to **Bot Battlr**, the one and only spot in the known universe where you can custom build your own Bot Army! This is our app:
 
 ![alt text][checkpoint]
 
@@ -9,31 +9,27 @@ Welcome to __Bot Battlr__, the one and only spot in the known universe where you
 Here's the scenario: a galactic overlord has hired you, a galactic web developer, to develop a galactic web app that will allow them to browse through a list of robots, view a robot's details, and, enlist a bot into their army.
 
 ## Instructions
+
 For this project, you’ll be building out a React application that displays a list of available bots, among other features. Try your best to find the right places to insert code into the established code base.
 
 Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
 
 ## Setup
-After cloning down the project
-- Run `npm install` in your terminal
-- Run `npm start` and a JSON server will spin up a mock back-end API and you can access the data at `http://localhost:3000/bots`. Your react application will also start, on port `3001`. The response should contain an array of bot objects that are structured as follows:
 
-  ```json
-    {
-      "id": 301,
-      "name": "gs-98",
-      "health": 71,
-      "damage": 85,
-      "armor": 34,
-      "bot_class": "Assault",
-      "catchphrase": "111111111111110011001111100101110010010110001100",
-      "avatar_url": "https://robohash.org/voluptasetab.png?size=300x300&set=set1",
-      "created_at": "2017-12-08T14:13:45.272Z",
-      "updated_at": "2017-12-08T14:13:45.272Z"
-    }
-  ```
+After cloning down the project:
 
+1. Run `npm install` in your terminal
+2. Run `npm start`: This will open both your React page on port `6002` and your backend on port `6001`.
 
+## Endpoints
+
+The base URL for your backend is: `http://localhost:6001`
+
+These are the endpoints you might need:
+
+- GET: `/bots`
+- POST: `/bots`
+- DELETE: `/bots/:id`
 
 ## What You Already Have
 
@@ -47,27 +43,32 @@ All of the code to style the page has been written for you, meaning that you sho
 
 ## Core Deliverables
 
-- As a user, I should be able to see profiles of all bots rendered in `BotCollection`.
-- As a user, I should be able to add an individual bot to my army by clicking on it. The selected bot should render in the `YourBotArmy` component. The bot can be enlisted only **once**. The bot **does not** disappear from the `BotCollection`.
-- As a user, I should be able to release a bot from my army by clicking on it. The bot disappears from the `YourBotArmy` component.
-- As a user, I should be able to discharge a bot from their service forever, by clicking the red button marked "x", which would delete the bot both from the backend and from the `YourBotArmy` on the frontend.
+As a user, I should be able to:
 
+- See profiles of all bots rendered in `BotCollection`.
+- Add an individual bot to my army by clicking on it. The selected bot should render in the `YourBotArmy` component. The bot can be enlisted only **once**. The bot **does not** disappear from the `BotCollection`.
+- Release a bot from my army by clicking on it. The bot disappears from the `YourBotArmy` component.
+- Discharge a bot from their service forever, by clicking the red button marked "x", which would delete the bot both from the backend and from the `YourBotArmy` on the frontend.
 
 ## Advanced Deliverables
 
-If you have finished the Core Deliverables, **stage a commit at this point!**
+These deliverables are not required to pass the code challenge, but if you have the extra time, or even after the code challenge, they are a great way to stretch your skills.
 
-- As a user, I should be able to choose if I want to enlist a bot into my army or just see thier data. Clicking on the card should instead display a show view (`BotSpecs`) for that bot, which should replace `BotsCollection`. BotSpecs should have two buttons: one to go back to the list view and another to enlist that bot. Your app could look like the following:
+> Note: If you are going to attempt these advanced deliverables, please be sure to have a working commit with all the Core Deliverables first!
+
+As a user, I should be able to:
+
+- Choose if I want to enlist a bot into my army or just see thier data. Clicking on the card should instead display a show view (`BotSpecs`) for that bot, which should replace `BotsCollection`. BotSpecs should have two buttons: one to go back to the list view and another to enlist that bot. Your app could look like the following:
 
 ![alt text][full_demo]
 
 [full_demo]: ./public/full_demo.gif "Full demo"
 
-- As a user, I can sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
-- As a user, when I enlist a bot it will be **removed** from the `BotCollection` and added to `YourBotArmy`.
-- As a user, I can filter bots by their class. We can select a few filters at the same time.
-- As a user, I can sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
-- As a user, I can only enlist **one** bot from each `bot_class`. The classes are `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
+- Sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
+- When I enlist a bot it will be **removed** from the `BotCollection` and added to `YourBotArmy`.
+- Filter bots by their class. We can select a few filters at the same time.
+- Sort bots by their health, damage or armor. For this, create a new component, `SortBar`.
+- Only enlist **one** bot from each `bot_class`. The classes are `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
 
 ## Rubric
 
@@ -107,4 +108,4 @@ If you have finished the Core Deliverables, **stage a commit at this point!**
 
 5. Everything from 4 plus extra features were added that are not listed in the deliverables.
 
-__Good Luck!__
+**Good Luck!**

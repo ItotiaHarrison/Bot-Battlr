@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class YourBotArmy extends Component {
   //your bot army code here...
 
-  render(){
+  render() {
     return (
       <div className="ui segment inverted olive bot-army">
         <div className="ui five column grid">
@@ -15,7 +15,6 @@ class YourBotArmy extends Component {
       </div>
     );
   }
-  
-};
+}
 
 export default YourBotArmy;
