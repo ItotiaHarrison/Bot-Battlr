@@ -9,7 +9,8 @@ const botTypeClasses = {
   Captain: "icon star"
 };
 
-const BotSpecs = props => {
+function BotSpecs({ bot }) {
+
   return (
     <div className="ui segment">
       <div className="ui two column centered grid">
@@ -18,18 +19,18 @@ const BotSpecs = props => {
             <img
               alt="oh no!"
               className="ui medium circular image bordered"
-              src={props.bot.avatar_url}
+              src={bot.avatar_url}
             />
           </div>
           <div className="four wide column">
-            <h2>Name: {props.bot.name}</h2>
+            <h2>Name: {bot.name}</h2>
             <p>
               <strong>Catchphrase: </strong>
-              {props.bot.catchphrase}
+              {bot.catchphrase}
             </p>
             <strong>
-              Class: {props.bot.bot_class}
-              <i className={botTypeClasses[props.bot.bot_class]} />
+              Class: {bot.bot_class}
+              <i className={botTypeClasses[bot.bot_class]} />
             </strong>
             <br />
             <div className="ui segment">
@@ -37,15 +38,15 @@ const BotSpecs = props => {
                 <div className="row">
                   <div className="column">
                     <i className="icon large circular red heartbeat" />
-                    <strong>{props.bot.health}</strong>
+                    <strong>{bot.health}</strong>
                   </div>
                   <div className="column">
                     <i className="icon large circular yellow lightning" />
-                    <strong>{props.bot.damage}</strong>
+                    <strong>{bot.damage}</strong>
                   </div>
                   <div className="column">
                     <i className="icon large circular blue shield" />
-                    <strong>{props.bot.armor}</strong>
+                    <strong>{bot.armor}</strong>
                   </div>
                 </div>
               </div>
