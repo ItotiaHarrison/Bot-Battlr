@@ -1,11 +1,14 @@
 import React from "react";
+import YourBotArmy from "./YourBotArmy";
+import BotCollection from "./BotCollection";
 
 function BotsPage() {
   //start here with your code for step one
 
   return (
     <div>
-      {/* put your components here */}
+      <YourBotArmy />
+      <BotCollection />
     </div>
   )
 }
