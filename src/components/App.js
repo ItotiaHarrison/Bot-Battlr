@@ -1,6 +1,5 @@
 import React from "react";
 import BotsPage from "./BotsPage";
-import "./App.css";
 
 function App() {
   return (

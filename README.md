@@ -28,7 +28,7 @@ After unbundling the project:
 
 1. Run `npm install` in your terminal.
 2. Run `npm run server`. This will run your backend on port `8002`.
-3. Run `npm start`. This will run your React app on port `8000`.
+3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
 
 Make sure to open [http://localhost:8002/bots](http://localhost:8002/bots) in the browser to verify that your backend is working before you proceed!
 
@@ -104,7 +104,3 @@ As a user, I should be able to:
   `SortBar`.
 - Only enlist **one** bot from each `bot_class`. The classes are
   `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
-
-## Rubric
-
-You can find the rubric for this assessment [here](https://github.com/learn-co-curriculum/se-rubrics/blob/master/module-4.md).

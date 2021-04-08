@@ -6,7 +6,7 @@ const botTypeClasses = {
   Support: "icon plus circle",
   Medic: "icon ambulance",
   Witch: "icon magic",
-  Captain: "icon star"
+  Captain: "icon star",
 };
 
 function BotCard({ bot }) {
@@ -59,6 +59,6 @@ function BotCard({ bot }) {
       </div>
     </div>
   );
-};
+}
 
 export default BotCard;
