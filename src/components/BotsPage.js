@@ -1,31 +1,29 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import YourBotArmy from "./YourBotArmy";
 import BotCollection from "./BotCollection";
 
 function BotsPage() {
-  //start here with your code for step one
-
   const [bots, setBots] = useState([]);
   const [botArmy, setBotArmy] = useState([]);
 
 
-  useEffect(() => {
+  useEffect((armyBot) => {
     fetch("http://localhost:8002/bots")
     .then((res) => res.json())
     .then(bots => setBots(bots))
   }, [])
 
-  function addBotToArmy(){
+  function addBotToArmy(armyBot){
     const selectBot = bots.find(bot => bot === armyBot)
     setBotArmy([...botArmy, selectBot])
   }
 
-  function releaseBotFromArmy(){
+  function releaseBotFromArmy(armyBot){
     const remainedBotArmyList = botArmy.filter((bot) => bot !== armyBot)
     setBotArmy(remainedBotArmyList)
   }
 
-  function deleteBot(){
+  function deleteBot(armyBot){
   const deleteBots = bots.filter(bot => bot !== armyBot.id)
   setBots(deleteBots)
   
